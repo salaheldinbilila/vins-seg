@@ -1,0 +1,4 @@
+<launch>
+    <param name="topic_image" type="str" value="/camera/image_color" />
+    <node name="segmentation_node" pkg="image_segmentation" type="segmentation_node.py" output="screen"/>
+</launch>
