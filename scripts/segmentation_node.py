@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     rate = rospy.Rate(RATE)
     model = resnet50_unet(n_classes=23 ,  input_height=416, input_width=608)
-    model.load_weights('checkpoint.h5')
+    model.load_weights('/ws/src/image_segmentation/scripts/checkpoint.h5')
 
 
     while not rospy.is_shutdown():
